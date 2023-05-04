@@ -16,6 +16,12 @@ conda env create -f conda_env.yml
 ## Downloading datasets
 
 Create a directory for the dataset and load the dataset using [gsutil](https://cloud.google.com/storage/docs/gsutil_install#install). Replace `[DIRECTORY_NAME]` and `[GAME_NAME]` accordingly (e.g., `./dqn_replay` for `[DIRECTORY_NAME]` and `Breakout` for `[GAME_NAME]`)
+Appropriate Atari games for this project are:
+  - MontezumaRevenge
+  - Solaris
+  - Skiing
+  - CrazyClimber
+  - Asterix
 ```
 mkdir [DIRECTORY_NAME]
 gsutil -m cp -R gs://atari-replay-datasets/dqn/[GAME_NAME] [DIRECTORY_NAME]
